@@ -1,0 +1,450 @@
+(kicad_sch (version 20200828) (generator eeschema)
+
+  (page 1 3)
+
+  (paper "A4")
+
+  (title_block
+    (title "Hackaday Remoticon 2020 unofficial badge")
+    (date "2020-10-05")
+    (company "@thomasflummer")
+    (comment 1 "CC-BY-SA")
+  )
+
+  (lib_symbols
+    (symbol "Jumper:SolderJumper_2_Open" (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "JP" (id 0) (at 0 2.032 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "SolderJumper_2_Open" (id 1) (at 0 -2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (id 2) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (id 3) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "solder jumper SPST" (id 4) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Solder Jumper, 2-pole, open" (id 5) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "SolderJumper*Open*" (id 6) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "SolderJumper_2_Open_0_1"
+        (arc (start -0.254 1.016) (end -0.254 -1.016) (radius (at -0.254 0) (length 1.016) (angles 90.1 -90.1))
+          (stroke (width 0)) (fill (type none))
+        )
+        (arc (start -0.254 1.016) (end -0.254 -1.016) (radius (at -0.254 0) (length 1.016) (angles 90.1 -90.1))
+          (stroke (width 0)) (fill (type outline))
+        )
+        (arc (start 0.254 -1.016) (end 0.254 1.016) (radius (at 0.254 0) (length 1.016) (angles -89.9 89.9))
+          (stroke (width 0)) (fill (type none))
+        )
+        (arc (start 0.254 -1.016) (end 0.254 1.016) (radius (at 0.254 0) (length 1.016) (angles -89.9 89.9))
+          (stroke (width 0)) (fill (type outline))
+        )
+        (polyline
+          (pts
+            (xy -0.254 1.016)
+            (xy -0.254 -1.016)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0.254 1.016)
+            (xy 0.254 -1.016)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+      )
+      (symbol "SolderJumper_2_Open_1_1"
+        (pin passive line (at -3.81 0 0) (length 2.54)
+          (name "A" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 3.81 0 180) (length 2.54)
+          (name "B" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "power:+3V3" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "#PWR" (id 0) (at 0 -3.81 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Value" "+3V3" (id 1) (at 0 3.556 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (id 2) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (id 3) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "power-flag" (id 4) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Power symbol creates a global label with name \"+3V3\"" (id 5) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "+3V3_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+      )
+      (symbol "+3V3_1_1"
+        (pin power_in line (at 0 0 90) (length 0) hide
+          (name "+3V3" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "schematic:+BATT" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "#PWR" (id 0) (at 0 -3.81 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Value" "+BATT" (id 1) (at 0 3.556 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (id 2) (at 0 0 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Datasheet" "" (id 3) (at 0 0 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (symbol "+BATT_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+      )
+      (symbol "+BATT_1_1"
+        (pin power_in line (at 0 0 90) (length 0) hide
+          (name "+BATT" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+  )
+
+
+  (wire (pts (xy 128.27 121.92) (xy 128.27 129.54))
+    (stroke (width 0) (type solid) (color 0 0 0 0))
+  )
+  (wire (pts (xy 128.27 129.54) (xy 139.7 129.54))
+    (stroke (width 0) (type solid) (color 0 0 0 0))
+  )
+  (wire (pts (xy 147.32 129.54) (xy 161.29 129.54))
+    (stroke (width 0) (type solid) (color 0 0 0 0))
+  )
+  (wire (pts (xy 161.29 129.54) (xy 161.29 121.92))
+    (stroke (width 0) (type solid) (color 0 0 0 0))
+  )
+
+  (symbol (lib_id "power:+3V3") (at 128.27 121.92 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid "69e79000-3e91-43bb-ad52-2a5ebac7c622")
+    (property "Reference" "#PWR07" (id 0) (at 128.27 125.73 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3V3" (id 1) (at 128.27 118.11 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (id 2) (at 128.27 121.92 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (id 3) (at 128.27 121.92 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
+  (symbol (lib_id "schematic:+BATT") (at 161.29 121.92 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid "ab53dd75-a230-4b34-a2ba-ce83f2afbaa3")
+    (property "Reference" "#PWR08" (id 0) (at 161.29 125.73 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+BATT" (id 1) (at 161.29 118.364 0))
+    (property "Footprint" "" (id 2) (at 161.29 121.92 0)
+      (effects (font (size 1.524 1.524)))
+    )
+    (property "Datasheet" "" (id 3) (at 161.29 121.92 0)
+      (effects (font (size 1.524 1.524)))
+    )
+  )
+
+  (symbol (lib_id "Jumper:SolderJumper_2_Open") (at 143.51 129.54 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid "22894b24-032a-4023-845d-f27e51442fab")
+    (property "Reference" "JP1" (id 0) (at 143.51 123.19 0))
+    (property "Value" "SolderJumper_2_Open" (id 1) (at 143.51 125.73 0))
+    (property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" (id 2) (at 143.51 129.54 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (id 3) (at 143.51 129.54 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
+  (sheet (at 41.91 119.38) (size 46.99 26.67)
+    (stroke (width 0.001) (type solid) (color 132 0 132 1))
+    (fill (color 255 255 255 0.0000))
+    (uuid 3ab8d613-24c2-4c92-802c-3b92b8f558c6)
+    (property "Sheet name" "Feather wing" (id 0) (at 41.91 118.7441 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "feather_wing.kicad_sch" (id 1) (at 41.91 146.5589 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 186.69 78.74) (size 41.91 19.05)
+    (stroke (width 0.001) (type solid) (color 132 0 132 1))
+    (fill (color 255 255 255 0.0000))
+    (uuid eaf6747f-d607-496a-bc34-5f74921ded0c)
+    (property "Sheet name" "SMD challenge" (id 0) (at 186.69 78.1041 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "smd_challenge.kicad_sch" (id 1) (at 186.69 98.2989 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (symbol_instances
+    (path "/69e79000-3e91-43bb-ad52-2a5ebac7c622"
+      (reference "#PWR07") (unit 1) (value "+3V3") (footprint "")
+    )
+    (path "/ab53dd75-a230-4b34-a2ba-ce83f2afbaa3"
+      (reference "#PWR08") (unit 1) (value "+BATT") (footprint "")
+    )
+    (path "/22894b24-032a-4023-845d-f27e51442fab"
+      (reference "JP1") (unit 1) (value "SolderJumper_2_Open") (footprint "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm")
+    )
+    (path "/3ab8d613-24c2-4c92-802c-3b92b8f558c6/33386cb0-10e1-4b98-887c-250f30077973"
+      (reference "#PWR09") (unit 1) (value "+3V3") (footprint "")
+    )
+    (path "/3ab8d613-24c2-4c92-802c-3b92b8f558c6/1bdc53dd-b2d2-4a0f-b863-5d57561bc2b1"
+      (reference "#PWR010") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/3ab8d613-24c2-4c92-802c-3b92b8f558c6/7375df85-8b17-4204-91bd-3fc8d88aa169"
+      (reference "J1") (unit 1) (value "Conn_02x16_Odd_Even") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x16_P2.54mm_Vertical_SMD")
+    )
+    (path "/3ab8d613-24c2-4c92-802c-3b92b8f558c6/dca56d5f-64a2-41c4-bc6e-c580096d9d6a"
+      (reference "J2") (unit 1) (value "Conn_02x12_Odd_Even") (footprint "Connector_PinHeader_2.54mm:PinHeader_2x12_P2.54mm_Vertical_SMD")
+    )
+    (path "/3ab8d613-24c2-4c92-802c-3b92b8f558c6/46c3c450-085b-447d-9f3f-ebbf4bfd9d86"
+      (reference "TP1") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
+    )
+    (path "/3ab8d613-24c2-4c92-802c-3b92b8f558c6/5d78937c-6969-42a4-ad33-079718ef7215"
+      (reference "TP2") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
+    )
+    (path "/3ab8d613-24c2-4c92-802c-3b92b8f558c6/5ce8bf36-7eb3-4a7e-8728-529e7f75af83"
+      (reference "TP3") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
+    )
+    (path "/3ab8d613-24c2-4c92-802c-3b92b8f558c6/4a11858a-b0df-4c93-a484-989993c1d7fa"
+      (reference "TP4") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
+    )
+    (path "/3ab8d613-24c2-4c92-802c-3b92b8f558c6/179f1c9b-c01e-47b8-b7e6-cc2d800515de"
+      (reference "TP5") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
+    )
+    (path "/3ab8d613-24c2-4c92-802c-3b92b8f558c6/f91edd07-5f0e-491d-84ab-8c2dbf9b4d5b"
+      (reference "TP6") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
+    )
+    (path "/3ab8d613-24c2-4c92-802c-3b92b8f558c6/73b84f5f-6c51-4a32-a4c3-a73a6c395301"
+      (reference "TP7") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
+    )
+    (path "/3ab8d613-24c2-4c92-802c-3b92b8f558c6/04c75caa-a016-4157-a1e2-942493e4122b"
+      (reference "TP8") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
+    )
+    (path "/3ab8d613-24c2-4c92-802c-3b92b8f558c6/70fd4044-3e5f-41f0-a2d2-1f255d2ea1cb"
+      (reference "TP9") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
+    )
+    (path "/3ab8d613-24c2-4c92-802c-3b92b8f558c6/d6a30637-6ffa-4492-b957-df373dfbcc1a"
+      (reference "TP10") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
+    )
+    (path "/3ab8d613-24c2-4c92-802c-3b92b8f558c6/b65bcb3e-919b-45fb-9f66-15ac83c17bd1"
+      (reference "TP11") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
+    )
+    (path "/3ab8d613-24c2-4c92-802c-3b92b8f558c6/48bf8db9-429b-441f-8d26-11a6f0836bab"
+      (reference "TP12") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
+    )
+    (path "/3ab8d613-24c2-4c92-802c-3b92b8f558c6/4626ad46-c920-4bcb-a877-0a0bc22defef"
+      (reference "TP13") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
+    )
+    (path "/3ab8d613-24c2-4c92-802c-3b92b8f558c6/cb0d2673-502a-4ce1-b717-436cb2b5b9a9"
+      (reference "TP14") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
+    )
+    (path "/3ab8d613-24c2-4c92-802c-3b92b8f558c6/9b33eedd-4450-4782-8b5e-de130a4344d1"
+      (reference "TP15") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
+    )
+    (path "/3ab8d613-24c2-4c92-802c-3b92b8f558c6/62d32c18-341d-49a2-8b17-40a86292324b"
+      (reference "TP16") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
+    )
+    (path "/3ab8d613-24c2-4c92-802c-3b92b8f558c6/a8cbac9f-348b-4ee4-9a0f-f199319be529"
+      (reference "TP17") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
+    )
+    (path "/3ab8d613-24c2-4c92-802c-3b92b8f558c6/0ce0a002-0f22-4d06-a74d-443800cbde96"
+      (reference "TP18") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
+    )
+    (path "/3ab8d613-24c2-4c92-802c-3b92b8f558c6/4bcc95f9-f570-4653-8cf6-e6b868f6720a"
+      (reference "TP19") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
+    )
+    (path "/3ab8d613-24c2-4c92-802c-3b92b8f558c6/631faaf3-faac-4556-af0a-62255c212cb0"
+      (reference "TP20") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
+    )
+    (path "/3ab8d613-24c2-4c92-802c-3b92b8f558c6/6a0ba666-5675-49e7-8143-dfc1c8e902ac"
+      (reference "TP21") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
+    )
+    (path "/3ab8d613-24c2-4c92-802c-3b92b8f558c6/5c30df81-2067-45aa-b3df-133d5171a821"
+      (reference "TP22") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
+    )
+    (path "/3ab8d613-24c2-4c92-802c-3b92b8f558c6/3871cc6b-28de-4c29-97a7-3816c0a85f2c"
+      (reference "TP23") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
+    )
+    (path "/3ab8d613-24c2-4c92-802c-3b92b8f558c6/e4331b1b-9137-406b-abf9-73d1f421d596"
+      (reference "TP24") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
+    )
+    (path "/3ab8d613-24c2-4c92-802c-3b92b8f558c6/f23641c6-50b9-40eb-b9ef-424aa2a6cc65"
+      (reference "TP25") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
+    )
+    (path "/3ab8d613-24c2-4c92-802c-3b92b8f558c6/80e1c1f4-e29c-4e0b-ac01-76d8c3556c31"
+      (reference "TP26") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
+    )
+    (path "/3ab8d613-24c2-4c92-802c-3b92b8f558c6/b8e6038c-4f2d-4734-a395-6f2405877576"
+      (reference "TP27") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
+    )
+    (path "/3ab8d613-24c2-4c92-802c-3b92b8f558c6/7e1fcaf7-9a6c-420b-a8fd-a1a5a6e8c6be"
+      (reference "TP28") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_D1.5mm")
+    )
+    (path "/eaf6747f-d607-496a-bc34-5f74921ded0c/6b921b3a-1a48-412e-9394-b65b30d9dae4"
+      (reference "#PWR01") (unit 1) (value "+BATT") (footprint "")
+    )
+    (path "/eaf6747f-d607-496a-bc34-5f74921ded0c/4067e26a-786b-4f23-9e16-0b4567ea1c75"
+      (reference "#PWR02") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/eaf6747f-d607-496a-bc34-5f74921ded0c/33931ba3-2f3e-4b32-aa83-f147e8ec5d40"
+      (reference "#PWR03") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/eaf6747f-d607-496a-bc34-5f74921ded0c/a9265416-849b-4760-8483-2c71078a8ca7"
+      (reference "#PWR04") (unit 1) (value "+BATT") (footprint "")
+    )
+    (path "/eaf6747f-d607-496a-bc34-5f74921ded0c/bb398382-9ad3-48d4-816a-0fbaf8f504e2"
+      (reference "#PWR05") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/eaf6747f-d607-496a-bc34-5f74921ded0c/9c7c905d-2335-46a5-a0c4-c5fe618432f6"
+      (reference "#PWR06") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/eaf6747f-d607-496a-bc34-5f74921ded0c/50a59201-84a9-455a-9bcf-798a47084ccd"
+      (reference "BT1") (unit 1) (value "Battery") (footprint "footprints:BATT_CR2032_SMD")
+    )
+    (path "/eaf6747f-d607-496a-bc34-5f74921ded0c/b49eadb5-3689-4fcd-bacb-49922241d79c"
+      (reference "C1") (unit 1) (value "0.1 uF") (footprint "footprints:C_1206_HandSoldering")
+    )
+    (path "/eaf6747f-d607-496a-bc34-5f74921ded0c/c3fc2941-1ae2-40ab-9f04-65d77b8863a1"
+      (reference "CON1") (unit 1) (value "AVR-ISP-6") (footprint "footprints:AVR-ISP-6")
+    )
+    (path "/eaf6747f-d607-496a-bc34-5f74921ded0c/f229ee5d-6b0a-4b6f-bc95-c061a1b3ee19"
+      (reference "D1") (unit 1) (value "LED") (footprint "footprints:LED-1206")
+    )
+    (path "/eaf6747f-d607-496a-bc34-5f74921ded0c/5f706acd-b758-4396-98fd-4891dfad6fca"
+      (reference "D2") (unit 1) (value "LED") (footprint "footprints:LED-0805")
+    )
+    (path "/eaf6747f-d607-496a-bc34-5f74921ded0c/fc4e369d-3e9a-4931-ab33-326dfb63e232"
+      (reference "D3") (unit 1) (value "LED") (footprint "footprints:LED-0603")
+    )
+    (path "/eaf6747f-d607-496a-bc34-5f74921ded0c/3a4d4fc1-dce0-4605-8e70-1a277b65ec63"
+      (reference "D4") (unit 1) (value "LED") (footprint "footprints:LED_0402")
+    )
+    (path "/eaf6747f-d607-496a-bc34-5f74921ded0c/f6f6e210-3d8e-40be-9455-9c196adb96d7"
+      (reference "D5") (unit 1) (value "LED") (footprint "footprints:LED_0201")
+    )
+    (path "/eaf6747f-d607-496a-bc34-5f74921ded0c/169f3c4e-488b-4352-9a1f-e7fc4bb2951e"
+      (reference "IC1") (unit 1) (value "IC1") (footprint "footprints:SOIJ-8_5.3x5.3mm_Pitch1.27mm")
+    )
+    (path "/eaf6747f-d607-496a-bc34-5f74921ded0c/9bd5c19b-0582-4018-a146-f49266c5e1e1"
+      (reference "P1") (unit 1) (value "CONN_01X01") (footprint "footprints:testPad")
+    )
+    (path "/eaf6747f-d607-496a-bc34-5f74921ded0c/17370a54-bdd4-4221-8019-aae6666d7c19"
+      (reference "P2") (unit 1) (value "CONN_01X01") (footprint "footprints:testPad")
+    )
+    (path "/eaf6747f-d607-496a-bc34-5f74921ded0c/9ad8cf20-daa5-42c6-ac2c-17654f9f8d49"
+      (reference "P3") (unit 1) (value "CONN_01X01") (footprint "footprints:testPad")
+    )
+    (path "/eaf6747f-d607-496a-bc34-5f74921ded0c/eb82d137-400b-485e-ac9f-5117df10adf9"
+      (reference "P4") (unit 1) (value "CONN_01X01") (footprint "footprints:testPad")
+    )
+    (path "/eaf6747f-d607-496a-bc34-5f74921ded0c/87040708-f576-4357-8478-9ab8e21556d7"
+      (reference "P5") (unit 1) (value "CONN_01X01") (footprint "footprints:testPad")
+    )
+    (path "/eaf6747f-d607-496a-bc34-5f74921ded0c/37b5d7d1-26fe-48c6-b029-89dd0a4ede61"
+      (reference "PG1") (unit 1) (value "CONN_01X01") (footprint "footprints:testPad")
+    )
+    (path "/eaf6747f-d607-496a-bc34-5f74921ded0c/c27971aa-0f0a-4e58-afb5-6b8dd1ff6aa7"
+      (reference "PG2") (unit 1) (value "CONN_01X01") (footprint "footprints:testPad")
+    )
+    (path "/eaf6747f-d607-496a-bc34-5f74921ded0c/5e6cd06a-2df0-4345-91a9-14f9efc81039"
+      (reference "PG3") (unit 1) (value "CONN_01X01") (footprint "footprints:testPad")
+    )
+    (path "/eaf6747f-d607-496a-bc34-5f74921ded0c/f15d3aa3-5d56-48ad-a4bb-f5a1206980e6"
+      (reference "PG4") (unit 1) (value "CONN_01X01") (footprint "footprints:testPad")
+    )
+    (path "/eaf6747f-d607-496a-bc34-5f74921ded0c/75ebda30-367a-4067-baed-8a3cdd5244a7"
+      (reference "PG5") (unit 1) (value "CONN_01X01") (footprint "footprints:testPad")
+    )
+    (path "/eaf6747f-d607-496a-bc34-5f74921ded0c/179ea4d9-e6c1-4b15-9915-1c00bf5f1201"
+      (reference "R1") (unit 1) (value "330") (footprint "footprints:R_1206")
+    )
+    (path "/eaf6747f-d607-496a-bc34-5f74921ded0c/2f7eec09-383e-42cf-9463-66222c57ed9d"
+      (reference "R2") (unit 1) (value "330") (footprint "footprints:R_0805")
+    )
+    (path "/eaf6747f-d607-496a-bc34-5f74921ded0c/b592dc15-3f08-45af-8686-8dcf5d54b98d"
+      (reference "R3") (unit 1) (value "330") (footprint "footprints:R_0603")
+    )
+    (path "/eaf6747f-d607-496a-bc34-5f74921ded0c/74ffe14a-ca89-4bdd-99a0-e01ae69ede12"
+      (reference "R4") (unit 1) (value "330") (footprint "footprints:R_0402")
+    )
+    (path "/eaf6747f-d607-496a-bc34-5f74921ded0c/6842a3a6-a008-49eb-8ded-6da6c4fc61bb"
+      (reference "R5") (unit 1) (value "330") (footprint "footprints:R_0201")
+    )
+  )
+)
