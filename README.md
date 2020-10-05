@@ -28,9 +28,9 @@ The GND on the Feather and GND on the SMD soldering challenge is connected and i
 
 ## Making your own
 
-If you want to make your own, I have included the gerbers, in case you don't want to install the nightly version.
+If you want to make your own, I have included the gerbers, in case you don't want to install the nightly version of KiCad.
 
-There is also a shared projects at OSHPark, just remember to select AfterDark, when checking out to get the same look as on the render in the top of this page. It will also function in Purple (or any other color for that matter), but will have a slightly different look.
+There is also a [shared projects at OSHPark](https://oshpark.com/shared_projects/1NAp0lZJ), just remember to select AfterDark, when checking out to get the same look as on the render in the top of this page. It will also function in Purple (or any other color for that matter), but will have a slightly different look.
 
 The parts needed for the SMD Soldering challenge are listed on [MakersBox repository](https://github.com/aspro648/KiCad/tree/master/projects/Attiny/Attiny85ChallengeHackaday2020) and exactly which header you use for mounting a feather depens a little on what you have mounted on the Feather. It's a simple double row SMD footprint and the male pin breakaway type is probably the cheapest, and a low profile version is best, to keep the overall thickness as low as possible.
 
